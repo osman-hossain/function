@@ -173,3 +173,48 @@ int main()
 ```  
 <image src="./images/square.png"/>
 
+### Area of Triangle
+
+```c
+#include<stdio.h>
+double at(double b, double h)
+{
+    return (b*h)/2;
+}
+
+int main()
+{
+    double base,height;
+    printf("Enter the base : ");
+    scanf("%lf",&base);
+    printf("Enter the height : ");
+    scanf("%lf",&height);
+    double result=at(base,height);
+    printf("Area of Triangle is : %.2lf\n",result);
+    printf("Area of Triangle is : %.2lf\n",at(10,5));
+}
+
+``` 
+<image src="./images/areaoftriangle.png" width="500" title="areaoftriangle"/>   
+alternative
+
+```c
+#include<stdio.h>
+void at(double b,double h)
+{
+    double result =  (b*h)/2;
+    printf("Area of Triangle is : %.2lf\n",result);
+}
+
+int main()
+{
+    double base,height;
+    printf("Enter the base : ");
+    scanf("%.2f",&base);
+    printf("Enter the height : ");
+    scanf("%.2lf",&height);
+
+    at(base,height);
+    at(10,3.2);
+}
+![alter](./images/alt.png)  
