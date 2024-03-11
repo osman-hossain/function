@@ -217,4 +217,34 @@ int main()
     at(base,height);
     at(10,3.2);
 }
-![alter](./images/alt.png)  
+![alter](./images/alt.png) 
+
+### whole square unlimited
+
+```c
+#include<stdio.h>
+void calculatepower(double a,double b)
+{
+    double i,result=1;
+    for(i=1; i<=b; i++)
+    {
+        result=result*a;
+    }
+    printf("Result = %.2lf",result);
+}
+
+int main()
+{
+    double base,exp;
+    printf("Enter the base : ");
+    scanf("%lf",&base);
+    printf("Enter the exponent : ");
+    scanf("%lf",&exp);
+
+    calculatepower(base,exp);
+    calculatepower(10,2);
+    calculatepower(3,3);
+    calculatepower(4,2);
+}
+```  
+<image src="./images/power.png" width="500" title="power"/>  
