@@ -150,3 +150,26 @@ int main()
 
 ![void](./images/void.png)  
 
+### Square ^
+
+```c
+#include<stdio.h>
+int square(int a)
+{
+    return a*a;
+}
+
+int main()
+{
+    int num;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    int result = square(num);
+    printf("Square = %d\n",result);
+    printf("Square = %d\n",square(2));
+    printf("Square = %d\n",square(5));
+}
+
+```  
+<image src="./images/square.png"/>
+
