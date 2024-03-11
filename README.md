@@ -248,3 +248,23 @@ int main()
 }
 ```  
 <image src="./images/power.png" width="500" title="power"/>  
+
+### array in function
+
+```c
+#include<stdio.h>
+int main()
+{
+    int a[]={10,33,50,66,22};
+    display(a);
+}
+void display(int x[])
+{
+    for(int i=0; i<5; i++)
+    {
+        printf("%d\n",x[i]);
+    }
+}
+```  
+<image src="./images/arrayfunction.png" width="500" title="arrayfunction"/>  
+
