@@ -268,3 +268,87 @@ void display(int x[])
 ```  
 <image src="./images/arrayfunction.png" width="500" title="arrayfunction"/>  
 
+### maximum number using function
+
+```c
+#include<stdio.h>
+int main()
+{
+    int a[]={10,30,50,33,44},b[]={30,44,13,55,23};
+    maximum(a);
+    maximum(b);
+    minimum(a);
+    minimum(b);
+
+
+}
+
+void maximum(int x[])
+{
+    int max=x[0];
+    for(int i=1; i<5; i++)
+    {
+        if(x[i]>max)
+        {
+            max=x[i];
+        }
+    }
+    printf("Maximum = %d\n",max);
+}
+
+void minimum(int y[])
+{
+    int min=y[0];
+    if(int j=1; j<5; j++)
+    {
+        if(y[j]<min)
+        {
+            min=y[j];
+        }
+    }
+    printf("Minimum = %d\n",min);
+}
+```
+<image src="./images/maxmin.png" width="500" title="maxmin"/>  
+
+### alternative
+
+```c
+#include<stdio.h>
+int main()
+{
+    int a[]={10,30,55,42,25};
+    maximum(a);
+    minimum(a);
+    printf("Maximum = %d\n",maximum(a));
+    printf("Minimum = %d\n",minimum(a));
+}
+int maximum(int x[])
+{
+    int max=x[0];
+    for(int i=1; i<5; i++)
+    {
+        if(x[i]>max)
+        {
+            max=x[i];
+        }
+    }
+    return max;
+}
+int minimum(int y[])
+{
+    int min=y[0];
+    for(int j=1; j<5; j++)
+    {
+        if(y[j]<min)
+        {
+            min=y[j];
+        }
+    }
+    return min;
+}
+```
+![alternative](./images/alter.png) 
+ 
+</br>  
+
