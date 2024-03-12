@@ -352,3 +352,55 @@ int minimum(int y[])
  
 </br>  
 
+### string function
+
+```c
+#include<stdio.h>
+void display(char x[])
+{
+    char i;
+    while(x[i]!='\0')
+    {
+        printf("%c\n",x[i]);
+        i++;
+    }
+}
+
+int main()
+{
+    char a[]="dipraj sareng";
+    display(a);
+}
+```
+
+<image src="./images/functionstring.png" width="500" title="functionstring"/>  
+
+### similar
+
+```c
+#include<stdio.h>
+void display(char x[])
+{
+    char i=0;
+    while(x[i]!='\0')
+    {
+        printf("%c",x[i]);
+        i++;
+    }
+    printf("\n");
+}
+
+int main()
+{
+    char a[]="dipraj sareng";
+    char b[]="parizad ";
+    char c[]="M V Lalmonirhat";
+    display(a);
+    display(b);
+    display(c);
+}
+```  
+</br>
+
+![similar](./images/similar.png)
+</br>
