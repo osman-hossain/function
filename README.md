@@ -429,3 +429,60 @@ int fact(int x)
 <image src="./images/recursion.png" width="500" title="recursionfactorial"/>  
 </br>
 
+# practice
+
+```c
+// a programme that print power/square
+#include<stdio.h>
+int square(int ,int );
+int main(void)
+{
+    int base,exponent;
+    printf("Enter base : ");
+    scanf("%d",&base);
+    printf("Enter exponent : ");
+    scanf("%d",&exponent);
+    square(base,exponent);
+    printf("The square of %d is : %d\n",base,square(base,exponent));
+}
+int square(x,y)
+{
+    int mult=1,i=1;
+    while(i<=y)
+    {
+        mult=mult*x;
+        i++;
+    }
+    return mult;
+}
+```
+<image src="./images/pr1.png" width="500" title="powerorsquare"/>  
+
+### swap two numbers using function
+
+```c
+#include<stdio.h>
+void swap(int *,int *);
+int main()
+{
+    int n1,n2;
+    printf("\n\nFunction : swap two numbers using function. \n");
+    printf("--------------------------------------------\n");
+    printf("Enter 1st number : ");
+    scanf("%d",&n1);
+    printf("Enter 2nd number : ");
+    scanf("%d",&n2);
+    printf("Before swapping : n1 = %d, n2 = %d\n",n1,n2);
+    swap(&n1,&n2);
+    printf("After swapping : n1 = %d, n2 = %d\n",n1,n2);
+    return 0;
+}
+void swap(int *x,int *y)
+{
+    int temp;
+    temp = *x;
+    *x=*y;
+    *y=temp;
+}
+```
+![swap](./images/swapr.png)
