@@ -404,3 +404,28 @@ int main()
 
 ![similar](./images/similar.png)
 </br>
+
+### factorial using recurtion
+
+```c
+#include<stdio.h>
+int main()
+{
+    int result=fact(5);
+    printf("Factorial of 5 is : %d\n",result);
+}
+int fact(int x)
+{
+    if(x==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return x*fact(x-1);
+    }
+}
+```
+<image src="./images/recursion.png" width="500" title="recursionfactorial"/>  
+</br>
+
