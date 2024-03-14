@@ -486,3 +486,85 @@ void swap(int *x,int *y)
 }
 ```
 ![swap](./images/swapr.png)
+
+### check prime or not
+
+```c
+#include<stdio.h>
+int main()
+{
+    while(1)
+    {
+        int num;
+        printf("\n\n Function : check the number is prime or not using function\n");
+        printf("---------------------------------------------------------------\n");
+        printf("Enter the number : ");
+        scanf("%d",&num);
+        prime(num);
+    }
+}
+void prime(int x)
+{
+    int count=0,i;
+    if(x<=1)
+    {
+        printf("prime number\n");
+    }
+    for(i=2; i<x; i++)
+    {
+        if(x%i==0)
+        {
+            count++;
+            break;
+        }
+
+    }
+    if(count==0)
+    {
+        printf("The number %d is a prime number\n\n",x);
+    }
+    else
+    {
+        printf("The number %d is not a prime number\n\n",x);
+    }
+}
+```
+### alternative
+
+```c
+#include<stdio.h>
+int primeornot(int);
+int main()
+{
+    int num,result;
+    printf("\n\n Function : Check prime or not using function\n");
+    printf("-------------------------------------------------\n");
+    printf("Enter positive number : ");
+    scanf("%d",&num);
+    result=primeornot(num);
+    if(result==1)
+    {
+        printf("The number %d is a prime number\n\n",num);
+    }
+    else
+    {
+        printf("The number %d is not a prime number\n\n",num);
+    }
+}
+int primeornot(int x)
+{
+    int i=2;
+    while(i<x)
+    {
+        if(x%i==0)
+        {
+            return 0;
+        }
+        else
+        i++;
+    }
+    return 1;
+}
+```
+<image src="./images/primeornot" width="500" title="primeornot"/>
+
