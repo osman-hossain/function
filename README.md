@@ -568,3 +568,33 @@ int primeornot(int x)
 ```
 <image src="./images/primeornot" width="500" title="primeornot"/>
 
+### check odd or even using function
+
+```c
+#include<stdio.h>
+int oddeven(int);
+int main()
+{
+    int num;
+    printf("\n\n Function : Check odd or even number : \n");
+    printf("-------------------------------------------\n");
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    int result=oddeven(num);
+    if(result=0)
+        printf("The entered number is even.\n\n");
+    else
+        printf("The entered number is odd\n\n");
+}
+int oddeven(int x)
+{
+    if(x%2==0)
+    {
+        return 0;
+    }
+    else
+        return 1;
+}
+```
+<image src="./images/oddeven.png" width="500" title="oddeven"/>  
+
